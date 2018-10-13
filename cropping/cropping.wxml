@@ -1,0 +1,10 @@
+<import src="../cropper/cropper.wxml"/>
+<navigator class="icon iconfont icon-arrows-copy-copy goback" open-type="navigateBack" bindtap="navBack"><text>返回</text></navigator>
+<view class="cropper-wrapper">
+	<template is="we-cropper" data="{{...cropperOpt}}"/>
+</view>
+<view class='wx-corpper-btn'>
+	<button type="primary" size='mini' bindtap="uploadTap"> 选择图片 </button>
+	<button type="primary" size='mini' bindtap="getCropperImage"> 裁剪图片 </button>
+</view>
+
